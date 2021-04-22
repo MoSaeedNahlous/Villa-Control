@@ -1,0 +1,187 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+}
+body{
+    height: 100%;
+    background-image: url(res/images/blury-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 3;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.side-menu{
+    flex-grow: 1;
+    border: red 3px solid;
+    height: 100%;
+    background-color: rgba(252, 252, 252, 0.4);
+}
+    
+
+.slider{
+    flex-grow: 3;
+    border: black 3px solid;
+    
+    max-width: 69%;
+    
+}
+
+.logo{
+    border: chartreuse 3px solid;
+    text-align: center;
+    margin: auto;
+    padding: 1%;
+}
+
+.logo img{
+
+}
+.logo p{
+    margin-top:1%;
+    margin-bottom: 1%;
+    color: blue;
+    font-size: 30px;
+} 
+
+
+.dropdown-menu{
+
+    border: indigo 3px solid;
+}
+
+.dropdown-menu ul{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+.dropdown-menu ul li{
+    background-color: lightseagreen;
+    list-style-type: none;
+    cursor: pointer;
+    margin: 1%;
+}
+.dropdown-menu ul li:hover{
+    background-color: rgba(255, 68, 0, 0.808);
+    list-style-type: none;
+    cursor: pointer;
+    margin: 1%;
+}
+
+
+
+.dropdown-menu ul li div p{
+    padding: 2%;
+} 
+.dropdown-menu ul li div button{
+    padding: 2%;
+    width: 100%;
+    text-align: left;
+    background-color: lightseagreen;
+    
+    border: none;
+    
+}
+
+.dropdown-menu ul li div button:hover{
+    padding: 2%;
+    width: 100%;
+    text-align: left;
+    background-color: rgba(255, 68, 0, 0.808);
+    border: none;
+   
+}
+.menu-content{
+    display: none;
+    width: 100%;
+    
+} 
+.menu-content div{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    color:lightseagreen ;
+    width: 100%;
+    
+
+}
+
+.slide-show-container{
+    max-width: 100%;
+    max-height: 100%;
+    border: darkgreen 3px solid;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+.switcharoo{
+    width: auto;
+    height: auto;
+    padding-right: 25%;
+    padding-left: 25%;
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+}
+.switcharoo:focus{
+    background-color:  rgb(51, 102, 255);
+}
+
+
+
+        /* toggle in label designing */
+        .toggle {
+            margin-top: 5%;
+            margin-left: 38%;
+            margin-bottom: 3%;
+            float: none;
+            position: relative;
+            display: inline-block;
+            width: 100px;
+            height: 55px;
+            background-color: rgb(194, 193, 193);
+            border-radius: 30px;
+            border: 2px solid rgb(233, 230, 230);
+            cursor: pointer;
+        }
+
+        /* After slide changes */
+        .toggle:after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: rgb(235, 231, 231);
+            top: 1px;
+            left: 1px;
+            transition: all 0.5s;
+        }
+
+        /* Toggle text */
+       
+
+        /* Checkbox cheked effect */
+        .checkbox:checked+.toggle::after {
+            left: 45px;
+            top: 0px
+        }
+
+        /* Checkbox cheked toggle label bg color */
+        .checkbox:checked+.toggle {
+            background-color: rgb(51, 102, 255);
+        }
+
+        /* Checkbox vanished */
+        .checkbox {
+            display: none;
+        }
+
+        

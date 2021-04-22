@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css" /> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="side-menu">
+            <div class="logo">
+                <img src="res/images/logo.png" alt="logo" height="130px" width="130px">
+                <p>My Logo</p>
+            </div>
+            <div class="dropdown-menu">
+                <ul>
+                    <li>
+                        <div>
+                            <p>PROJECT MASTERPLAN</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="closed btn-tg" onclick="imageChanger1()">RIVIERA NEIGHBOURHOOD <span style="
+                                float: right;">&#8744;</span>
+                            </button>
+                            <div class="menu-content">
+                                <div class="GpioContainer">
+                                    <strong
+                                        style="color:lightseagreen ; text-align: center; margin-left: 38%;font-size: 20px ">Villa
+                                        Lights 1</strong>
+                                    <br>
+                                    <input type="checkbox" id="GPIO16" class="checkbox" />
+                                    <label for="GPIO16" class="toggle ">
+
+                                    </label>
+                                    <br>
+                                    <button class="switcharoo" id="GPIO16M" style="text-align: center;">
+                                        Hold
+                                    </button>
+                                    <br>
+                                </div>
+                                <div class="GpioContainer">
+                                    <strong
+                                        style="color:lightseagreen ; text-align: center; margin-left: 38%; font-size: 20px">Villa
+                                        Lights 2</strong>
+                                    <br>
+                                    <input type="checkbox" id="GPIO21" class="checkbox" />
+                                    <label for="GPIO21" class="toggle">
+                                    </label>
+                                    <br>
+                                    <button class="switcharoo" id="GPIO21M" style="text-align: center;">
+                                        Hold
+                                    </button>
+                                    <br>
+                                </div>
+                                <div class="GpioContainer">
+                                    <strong
+                                        style="color:lightseagreen ; text-align: center; margin-left: 38%;font-size: 20px">Villa
+                                        Lights 3</strong>
+                                    <br>
+                                    <input type="checkbox" id="GPIO20" class="checkbox" />
+                                    <label for="GPIO20" class="toggle">
+                                    </label>
+                                    <br>
+                                    <button class="switcharoo" id="GPIO20M" style="text-align: center;">
+                                        Hold
+                                    </button>
+                                    <br>
+                                </div>
+                                <div class="GpioContainer">
+                                    <strong
+                                        style="color:lightseagreen ; text-align: center; margin-left: 38%; font-size: 20px">Villa
+                                        Lights 4</strong>
+                                    <br>
+                                    <input type="checkbox" id="GPIO26" class="checkbox" />
+                                    <label for="GPIO26" class="toggle">
+                                    </label>
+                                    <br>
+                                    <button class="switcharoo" id="GPIO26M" style="text-align: center;">
+                                        Hold
+                                    </button>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="closed btn-tg">1 BEDROOM TWIN VILLAS <span
+                                    style="float: right;">&#8744;</span></button>
+                            <div class="menu-content">
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="closed btn-tg">2 BEDROOM VILLAS <span
+                                    style="float: right;">&#8744;</span></button>
+                            <div class="menu-content">
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="closed btn-tg">3 BEDROOM VILLAS <span
+                                    style="float: right;">&#8744;</span></button>
+                            <div class="menu-content">
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <button class="closed btn-tg">GARDENS <span style="float: right;">&#8744;</span></button>
+                            <div class="menu-content">
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                                <a href="#">Test</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="last" style="margin-top: 47.5%">
+                        <div>
+                            <p>ALL ON</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+            </div>
+
+        </div>
+        <div class="slider">
+
+            <div class="slide-show-container">
+                <img id="place-holder" src="res/images/background.jpg" alt="placeholder" width='100%' height="100%">
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="script.js"> </script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+<script>
+    const imageChanger1 = (e) => {
+        document.getElementById('place-holder').src = 'res/images/1.jpg'
+
+
+
+    }
+</script>
+
+</html>
